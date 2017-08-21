@@ -1,13 +1,17 @@
 dartMachine
 ===========
 
-This is a hacked version of the bartMachine package with details listed below, 
-extended with permission of the MIT License in the LICENSE file. 
+This is a fork of the bartMachine package with details listed below, designed for use in high-dimensional, sparse, settings. Of course, any bugs here are my own. For details, see [Bayesian Regression Trees for High Dimensional Prediction and Variable Selection. Journal of the American Statistical Association. To appear](http://www.tandfonline.com/doi/full/10.1080/01621459.2016.1264957).
 
-See below as well for installation instructions; everything below this point
-is due to Kapelner and Bleich. A demo of how to use this is included in the 
-Demo.R file.
 
+
+Instructions
+===============
+
+For detailed instructions on installation, see the instructions on the [bartMachine](https://github.com/kapelner/bartMachine/) repository. This package is not available on CRAN, and must be installed by compiling from the source. 
+
+Illustration
+=============
 
 bartMachine
 ===========
@@ -90,8 +94,3 @@ be corrected by running `R CMD INSTALL --no-multiarch bartMachine`. This may als
 and `install.packages("missForest")`). Upon successful installation, the last line of the output should read `DONE (bartMachine)`. 
 In R, you can now run `library(bartMachine)` and start using the package normally.
 
-Acknowledgements
-------------------
-
-We thank Ed George, Abba Krieger, Shene Jensen and Richard Berk for helpful discussions. We thank Matt Olson for pointing out an important memory issue. 
-We thank [JProfiler](http://www.ej-technologies.com/products/jprofiler/overview.html) for profiling the code which allowed us to create a lean implementation.
